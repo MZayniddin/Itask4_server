@@ -87,7 +87,7 @@ export const signin = async (req, res) => {
         displayname: foundUser.displayname,
         status: foundUser.status,
       }),
-      user: foundUser.displayName,
+      user: foundUser.displayname,
     });
   } catch (error) {
     res.status(500).json({ message: error.message });
